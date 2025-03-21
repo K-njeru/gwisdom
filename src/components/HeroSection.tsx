@@ -34,7 +34,7 @@ const programs = [
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#1e40af]">
+    <div className="relative min-h-screen overflow-hidden bg-[#164d98]">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
