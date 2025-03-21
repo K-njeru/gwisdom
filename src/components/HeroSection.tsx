@@ -34,11 +34,11 @@ const programs = [
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white to-gray-50">
+    <div className="relative min-h-screen overflow-hidden bg-[#1e40af]">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#1e40af]/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#1e40af]/10 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
       </div>
       
       {/* Content */}
@@ -52,16 +52,16 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="text-center lg:text-left"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1e40af]/10 text-[#1e40af] mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white mb-8">
                 <span className="text-sm font-medium">Transforming Lives Through Christ</span>
               </div>
               
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Empowering Your
-                <span className="block text-[#1e40af]">Spiritual Journey</span>
+                <span className="block text-white">Spiritual Journey</span>
               </h1>
               
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-white/80">
                 Join us in discovering God&apos;s wisdom through comprehensive biblical education, 
                 fostering spiritual growth, and building a strong foundation in Christ.
               </p>
@@ -69,14 +69,14 @@ export default function Hero() {
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/programs"
-                  className="rounded-full bg-[#1e40af] px-8 py-3 text-center text-sm font-semibold text-white shadow-lg hover:bg-[#1e3a8a] transition-colors"
+                  className="rounded-full bg-white px-8 py-3 text-center text-sm font-semibold text-[#1e40af] shadow-lg hover:bg-gray-100 transition-colors"
                 >
                   Explore Programs
                   <ArrowRight className="ml-2 inline-block h-4 w-4" />
                 </Link>
                 <Link
                   href="/about"
-                  className="rounded-full bg-white px-8 py-3 text-center text-sm font-semibold text-gray-900 shadow-lg ring-1 ring-gray-200 hover:bg-gray-50 transition-colors"
+                  className="rounded-full bg-transparent px-8 py-3 text-center text-sm font-semibold text-white shadow-lg ring-1 ring-white hover:bg-white/10 transition-colors"
                 >
                   Learn More
                 </Link>
@@ -98,7 +98,6 @@ export default function Hero() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
             </motion.div>
           </div>
