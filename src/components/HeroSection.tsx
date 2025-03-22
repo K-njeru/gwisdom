@@ -92,10 +92,10 @@ export default function Hero() {
             >
               <div className="relative h-[600px] w-full overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070&auto=format&fit=crop&q=80"
                   alt="Christian education and community"
                   fill
-                  className="object-cover"
+                  className=""
                   priority
                 />
               </div>
