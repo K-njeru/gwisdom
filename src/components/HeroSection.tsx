@@ -95,7 +95,7 @@ export default function Hero() {
                   src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070&auto=format&fit=crop&q=80"
                   alt="Christian education and community"
                   fill
-                  className=""
+                  className="object-cover"
                   priority
                 />
               </div>
