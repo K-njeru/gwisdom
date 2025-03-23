@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, BookOpen, Users, Heart, GraduationCap } from 'lucide-react';
+import { ArrowRight, BookOpen, Users, Heart, GraduationCap, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -65,14 +65,14 @@ export default function Hero() {
 
           {/* Line 3: Right to Left (Upper Middle) */}
           <path
-            d="M1440, Q720,350 0,10"
+            d="M0,150 Q360,0 720,150 T1440,150 T2160,150"
             fill="none"
             stroke="rgba(255,255,255,0.12)"
             strokeWidth="2"
             className="animate-wave-4"
           />
 
-          {/* Line 5: Left to Right (Lower Middle) */}
+          {/* Line 4: Left to Right (Lower Middle) */}
           <path
             d="M0,700 Q360,550 720,700 T1440,700 T2160,700"
             fill="none"
@@ -95,7 +95,7 @@ export default function Hero() {
               className="text-center lg:text-left"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white mb-8">
-                <span className="text-sm font-medium">Transforming Lives Through Christ</span>
+                <span className="text-sm font-medium"><Sparkles className='inline mr-2'/>Transforming Lives Through Christ</span>
               </div>
 
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
