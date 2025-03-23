@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         port: "", // Leave empty unless using a specific port
         pathname: "/**", // Allows all paths under this hostname
       },
+      {
+        protocol: "https",
+        hostname: "img.freepik.com",
+        port: "", // Leave empty unless using a specific port
+        pathname: "/**", // Allows all paths under this hostname
+      },
     ],
   },
 };

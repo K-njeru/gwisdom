@@ -111,14 +111,14 @@ export default function Hero() {
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/programs"
-                  className="rounded-full bg-white px-8 py-3 text-center text-sm font-semibold text-[#1e40af] shadow-lg hover:bg-gray-100 transition-colors"
+                  className="rounded-full bg-white px-8 py-3 text-center ring-1 ring-blue-100 text-sm font-semibold text-[#1e40af] shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   Explore Programs
                   <ArrowRight className="ml-2 inline-block h-4 w-4" />
                 </Link>
                 <Link
                   href="/about"
-                  className="rounded-full bg-transparent px-8 py-3 text-center text-sm font-semibold text-white shadow-lg ring-1 ring-white hover:bg-white/10 transition-colors"
+                  className="rounded-full bg-transparent px-8 py-3 text-center text-sm font-semibold text-white shadow-lg ring-1 ring-white hover:bg-white/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   Donate
                 </Link>
