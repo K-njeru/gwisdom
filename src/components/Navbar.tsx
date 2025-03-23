@@ -119,11 +119,11 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Link
-                  href="/contact"
+                  href="/donate"
                   className="block text-center mt-4 text-sm font-semibold text-white bg-[#1e40af] px-6 py-3 rounded-full hover:bg-[#1e3a8a] transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Get Started
+                  Donate
                 </Link>
               </div>
             </div>
