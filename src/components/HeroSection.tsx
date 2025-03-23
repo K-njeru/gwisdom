@@ -120,7 +120,7 @@ export default function Hero() {
                   href="/about"
                   className="rounded-full bg-transparent px-8 py-3 text-center text-sm font-semibold text-white shadow-lg ring-1 ring-white hover:bg-white/10 transition-colors"
                 >
-                  Learn More
+                  Donate
                 </Link>
               </div>
             </motion.div>
@@ -141,6 +141,7 @@ export default function Hero() {
                   priority
                 />
               </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent rounded-2xl"></div>
             </motion.div>
           </div>
 
@@ -161,17 +162,17 @@ export default function Hero() {
                   className="relative group"
                 >
                   <Link href={`/programs/${program.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                    <div className="relative overflow-hidden rounded-2xl p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="relative h-[200px] overflow-hidden rounded-2xl p-6 bg-[#ffffff12] shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                       <div className={`inline-flex p-3 rounded-xl ${program.color}`}>
                         <program.icon className="h-6 w-6" />
                       </div>
-                      <h3 className="mt-4 text-lg font-semibold text-gray-900">
+                      <h3 className="mt-4 text-lg font-semibold text-white">
                         {program.name}
                       </h3>
-                      <p className="mt-2 text-sm text-gray-600">
+                      <p className="mt-2 text-sm text-white/80">
                         {program.description}
                       </p>
-                      <ArrowRight className="absolute bottom-4 right-4 h-5 w-5 text-[#1e40af] opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <ArrowRight className="absolute bottom-4 right-4 h-5 w-5 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </Link>
                 </motion.div>

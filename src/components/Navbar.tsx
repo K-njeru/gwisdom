@@ -4,13 +4,17 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Programs', href: '/programs' },
-  { name: 'Partners', href: '/partners' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/#Hero" },
+  { name: "About", href: "/about" },
+  { name: "Compass", href: "/compass" },
+  { name: "Programs", href: "/#Programs" },
+  { name: "Conference", href: "/conference" },
+  { name: "Partners", href: "/#Partners" },
 ];
+
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,14 +22,18 @@ export default function Navbar() {
   return (
     <header className="fixed w-full top-0 z-50">
       <nav 
-        className="mx-auto max-w-5xl mt-4 bg-white/90 backdrop-blur-md rounded-full border border-gray-200 shadow-lg"
+        className="mx-auto max-w-5xl mt-4 bg-[#ffffff12] backdrop-blur-md rounded-full border border-transparent shadow-lg"
         aria-label="Global"
       >
         <div className="flex items-center justify-between px-8 py-4">
           <div className="flex">
-            <Link href="/" className="text-2xl font-bold text-[#1e40af]">
-              Godly Wisdom
+            {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="-m-1.5 p-1.5">
+              <Image className="h-full w-auto" src="/globe.svg" alt="Godly wisdom" width={64} height={64} />
             </Link>
+            <span className="ml-2 text-lg font-bold"></span>
+          </div>
           </div>
           
           {/* Mobile menu button */}
@@ -46,7 +54,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900 hover:text-[#1e40af] transition-colors"
+                className="text-sm font-semibold leading-6 text-white hover:text-[#1e40af] transition-colors"
               >
                 {item.name}
               </Link>
@@ -55,10 +63,10 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <Link
-              href="/contact"
-              className="text-sm font-semibold leading-6 text-white bg-[#1e40af] px-6 py-2 rounded-full hover:bg-[#1e3a8a] transition-colors"
+              href="/donate"
+              className="text-sm font-semibold leading-6 text-white bg-transparent px-6 py-2 rounded-full hadow-lg ring-1 ring-white hover:bg-white/10 transition-colors"
             >
-              Get Started
+              Donate
             </Link>
           </div>
         </div>
@@ -75,9 +83,13 @@ export default function Navbar() {
           <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-x-4 top-8 bg-white rounded-2xl p-8 shadow-xl">
             <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold text-[#1e40af]">
-                Godly Wisdom
-              </Link>
+              {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="-m-1.5 p-1.5">
+              <Image className="h-full w-auto" src="/globe.svg" alt="Godly wisdom" width={64} height={64} />
+            </Link>
+            <span className="ml-2 text-lg font-bold"></span>
+          </div>
               <button
                 type="button"
                 className="rounded-md p-2.5 text-gray-700"
