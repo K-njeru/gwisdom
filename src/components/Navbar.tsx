@@ -51,14 +51,21 @@ export default function Navbar() {
           {/* Desktop menu */}
           <div className="hidden md:flex md:gap-x-8">
             {navigation.map((item) => (
+              <div key={item.name} className="relative group">
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white hover:text-[#1e40af] transition-colors"
+                className="text-sm font-semibold leading-6 text-white transition-colors"
               >
                 {item.name}
               </Link>
+              <div
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#1e40af] transition-all duration-300 group-hover:w-full
+                    } w-0`}
+                />
+            </div>
             ))}
+            
           </div>
 
           <div className="hidden md:block">

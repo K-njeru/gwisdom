@@ -8,25 +8,25 @@ import Image from 'next/image';
 const programs = [
   {
     name: 'Biblical Teaching',
-    description: 'Deep, transformative biblical education',
+    description: 'Grow from spiritual infancy to maturity through Christ-centered, life-transforming teachings.',
     icon: BookOpen,
     color: 'bg-[#1e40af] text-white',
   },
   {
     name: 'Economic Empowerment',
-    description: 'Financial wisdom and business skills',
+    description: 'Empowering believers with tools and training to thrive as stewards in God’s Kingdom.',
     icon: GraduationCap,
     color: 'bg-[#1e40af] text-white',
   },
   {
     name: 'Discipleship',
-    description: 'Growing together in Christ',
+    description: 'Raising committed followers of Christ through study, mentorship, and practical faith.',
     icon: Heart,
     color: 'bg-[#1e40af] text-white',
   },
   {
-    name: 'Community Outreach',
-    description: 'Serving and transforming communities',
+    name: 'Equipping Leaders',
+    description: 'Equipping church leaders with skills in governance, administration, and ministry strategy.',
     icon: Users,
     color: 'bg-[#1e40af] text-white',
   },
@@ -162,7 +162,7 @@ export default function Hero() {
                   className="relative group"
                 >
                   <Link href={`/programs/${program.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                    <div className="relative h-[200px] overflow-hidden rounded-2xl p-6 bg-[#ffffff12] shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="relative h-[230px] overflow-hidden rounded-2xl p-6 bg-[#ffffff12] shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                       <div className={`inline-flex p-3 rounded-xl ${program.color}`}>
                         <program.icon className="h-6 w-6" />
                       </div>
