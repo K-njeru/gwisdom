@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Menu, X, BookOpen, Users, Heart, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navigation = [
   { name: 'About', href: '/about' },

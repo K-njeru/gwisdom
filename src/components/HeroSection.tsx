@@ -34,13 +34,55 @@ const programs = [
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#164d98]">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background with Gradient and Wavy Lines */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#164d98] to-[#1e40af]">
+        {/* Wavy Lines SVG */}
+        <svg
+          className="absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          
+
+          {/* Line 1: Bottom-Left to Top-Right */}
+          <path
+            d="M0,900 Q360,750 720,900 T1440,900 T2160,900"
+            fill="none"
+            stroke="rgba(255,255,255,0.12)"
+            strokeWidth="2"
+            className="animate-wave-2"
+          />
+
+          {/* Line 2: Left to Right (Middle) */}
+          <path
+            d="M0,450 Q360,300 720,450 T1440,450 T2160,450"
+            fill="none"
+            stroke="rgba(255,255,255,0.15)"
+            strokeWidth="2"
+            className="animate-wave-3"
+          />
+
+          {/* Line 3: Right to Left (Upper Middle) */}
+          <path
+            d="M1440, Q720,350 0,10"
+            fill="none"
+            stroke="rgba(255,255,255,0.12)"
+            strokeWidth="2"
+            className="animate-wave-4"
+          />
+
+          {/* Line 5: Left to Right (Lower Middle) */}
+          <path
+            d="M0,700 Q360,550 720,700 T1440,700 T2160,700"
+            fill="none"
+            stroke="rgba(255,255,255,0.1)"
+            strokeWidth="2"
+            className="animate-wave-5"
+          />
+        </svg>
       </div>
-      
+
       {/* Content */}
       <div className="relative pt-32 pb-16 sm:pt-40 sm:pb-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -55,14 +97,14 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white mb-8">
                 <span className="text-sm font-medium">Transforming Lives Through Christ</span>
               </div>
-              
+
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Empowering Your
                 <span className="block text-white">Spiritual Journey</span>
               </h1>
-              
+
               <p className="mt-6 text-lg leading-8 text-white/80">
-                Join us in discovering God&apos;s wisdom through comprehensive biblical education, 
+                Join us in discovering God&apos;s wisdom through comprehensive biblical education,
                 fostering spiritual growth, and building a strong foundation in Christ.
               </p>
 
